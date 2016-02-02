@@ -33,8 +33,8 @@ cpdefine("inline:com-chilipeppr-widget-lasersolder", ["chilipeppr_ready"], funct
     return {
         id: "com-chilipeppr-widget-lasersolder",
         url: "(auto fill by runme.js)",
-        fiddleurl: "http://jsfiddle.net/chilipeppr/xuu785yz/",
-        name: "Widget / Laser Solderer",
+        fiddleurl: "(auto fill by runme.js)",
+        name: "(auto fill by runme.js)",
         desc: "The GPIO widget communicates to Ben Delarre’s GPIO server for a Raspberry Pi. The GPIO server was modeled after the Serial Port JSON Server (SPJS) and enables websocket communication from the browser to the Rpi’s GPIO ports.",
         publish: {
         },
