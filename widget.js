@@ -32,8 +32,10 @@ cprequire_test(["inline:com-chilipeppr-widget-lasersolder"], function (ls) {
 cpdefine("inline:com-chilipeppr-widget-lasersolder", ["chilipeppr_ready"], function () {
     return {
         id: "com-chilipeppr-widget-lasersolder",
-        url: "(auto fill by runme.js)",
-        fiddleurl: "(auto fill by runme.js)",
+        url: "(auto fill by runme.js)",       // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
+        fiddleurl: "(auto fill by runme.js)", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
+        githuburl: "(auto fill by runme.js)", // The backing github repo
+        testurl: "(auto fill by runme.js)",   // The standalone working widget so can view it working by itself
         name: "(auto fill by runme.js)",
         desc: "The GPIO widget communicates to Ben Delarre’s GPIO server for a Raspberry Pi. The GPIO server was modeled after the Serial Port JSON Server (SPJS) and enables websocket communication from the browser to the Rpi’s GPIO ports.",
         publish: {
