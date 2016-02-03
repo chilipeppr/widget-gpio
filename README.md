@@ -1,9 +1,9 @@
-# com-chilipeppr-widget-lasersolder
+# net-delarre-widget-gpio
 The GPIO widget communicates to Ben Delarre’s GPIO server for a Raspberry Pi. The GPIO server was modeled after the Serial Port JSON Server (SPJS) and enables websocket communication from the browser to the Rpi’s GPIO ports.
 
 
 
-## ChiliPeppr (auto fill by runme.js)
+## ChiliPeppr Widget / GPIO
 
 All ChiliPeppr widgets/elements are defined using cpdefine() which is a method
 that mimics require.js. Each defined object must have a unique ID so it does
@@ -11,8 +11,8 @@ not conflict with other ChiliPeppr widgets.
 
 | Item                  | Value           |
 | -------------         | ------------- | 
-| ID                    | com-chilipeppr-widget-lasersolder |
-| Name                  | (auto fill by runme.js) |
+| ID                    | net-delarre-widget-gpio |
+| Name                  | Widget / GPIO |
 | Description           | The GPIO widget communicates to Ben Delarre’s GPIO server for a Raspberry Pi. The GPIO server was modeled after the Serial Port JSON Server (SPJS) and enables websocket communication from the browser to the Rpi’s GPIO ports. |
 | chilipeppr.load() URL | http://raw.githubusercontent.com/raykholo/widget-gpio/master/auto-generated-widget.html |
 | Edit URL              | http://ide.c9.io/raykholo/widget-gpio |
@@ -29,20 +29,20 @@ back the instance of it.
 
 ```javascript
 // Inject new div to contain widget or use an existing div with an ID
-$("body").append('<' + 'div id="myDivWidgetLasersolder"><' + '/div>');
+$("body").append('<' + 'div id="myDivNetDelarreWidgetGpio"><' + '/div>');
 
 chilipeppr.load(
-  "#myDivWidgetLasersolder",
+  "#myDivNetDelarreWidgetGpio",
   "http://raw.githubusercontent.com/raykholo/widget-gpio/master/auto-generated-widget.html",
   function() {
-    // Callback after widget loaded into #myDivWidgetLasersolder
+    // Callback after widget loaded into #myDivNetDelarreWidgetGpio
     // Now use require.js to get reference to instantiated widget
     cprequire(
-      ["inline:com-chilipeppr-widget-lasersolder"], // the id you gave your widget
-      function(myObjWidgetLasersolder) {
+      ["inline:net-delarre-widget-gpio"], // the id you gave your widget
+      function(myObjNetDelarreWidgetGpio) {
         // Callback that is passed reference to the newly loaded widget
-        console.log("(auto fill by runme.js) just got loaded.", myObjWidgetLasersolder);
-        myObjWidgetLasersolder.init();
+        console.log("Widget / GPIO just got loaded.", myObjNetDelarreWidgetGpio);
+        myObjNetDelarreWidgetGpio.init();
       }
     );
   }
@@ -132,7 +132,7 @@ The table below shows, in order, the methods and properties inside the widget/el
           </tr>
       </thead>
       <tbody>
-      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-widget-lasersolder"</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/raykholo/widget-gpio/master/auto-generated-widget.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/raykholo/widget-gpio"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/raykholo/widget-gpio"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://widget-gpio-raykholo.c9users.io/widget.html"</td></tr><tr valign="top"><td>name</td><td>string</td><td>"(auto fill by runme.js)"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"The GPIO widget communicates to Ben Delarre’s GPIO server for a Raspberry Pi. The GPIO server was modeled after the Serial Port JSON Server (SPJS) and enables websocket communication from the browser to the Rpi’s GPIO ports."</td></tr><tr valign="top"><td>publish</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>subscribe</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>foreignPublish</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>foreignSubscribe</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>isInitted</td><td>boolean</td><td></td></tr><tr valign="top"><td>init</td><td>function</td><td>function () </td></tr><tr valign="top"><td>isHidden</td><td>boolean</td><td></td></tr><tr valign="top"><td>unactivateWidget</td><td>function</td><td>function () </td></tr><tr valign="top"><td>activateWidget</td><td>function</td><td>function () </td></tr><tr valign="top"><td>isVidLoaded</td><td>boolean</td><td></td></tr><tr valign="top"><td>lazyLoadTutorial</td><td>function</td><td>function () </td></tr><tr valign="top"><td>setupWatchZ</td><td>function</td><td>function () </td></tr><tr valign="top"><td>onZThresholdChange</td><td>function</td><td>function (evt) </td></tr><tr valign="top"><td>maxTemp</td><td>number</td><td></td></tr><tr valign="top"><td>timeStart</td><td>number</td><td></td></tr><tr valign="top"><td>timeEnd</td><td>number</td><td></td></tr><tr valign="top"><td>onAxes</td><td>function</td><td>function (data) </td></tr><tr valign="top"><td>statEl</td><td>object</td><td></td></tr><tr valign="top"><td>setupWsRecv</td><td>function</td><td>function () </td></tr><tr valign="top"><td>data</td><td>string</td><td></td></tr><tr valign="top"><td>onWsRecvLaser</td><td>function</td><td>function (data) </td></tr><tr valign="top"><td>onMaxTempUpdate</td><td>function</td><td>function () </td></tr><tr valign="top"><td>onTimeUpdate</td><td>function</td><td>function () </td></tr><tr valign="top"><td>isLaserOn</td><td>boolean</td><td></td></tr><tr valign="top"><td>timerId</td><td>object</td><td></td></tr><tr valign="top"><td>laserOn</td><td>function</td><td>function () </td></tr><tr valign="top"><td>laserOff</td><td>function</td><td>function () </td></tr><tr valign="top"><td>onTimer</td><td>function</td><td>function () </td></tr><tr valign="top"><td>setupPortList</td><td>function</td><td>function () </td></tr><tr valign="top"><td>onPortListClick</td><td>function</td><td>function (evt) </td></tr><tr valign="top"><td>getPortListCallback</td><td>function</td><td>function (data) </td></tr><tr valign="top"><td>options</td><td>object</td><td></td></tr><tr valign="top"><td>setupUiFromLocalStorage</td><td>function</td><td>function () </td></tr><tr valign="top"><td>saveOptionsLocalStorage</td><td>function</td><td>function () </td></tr><tr valign="top"><td>showBody</td><td>function</td><td>function (evt) </td></tr><tr valign="top"><td>hideBody</td><td>function</td><td>function (evt) </td></tr><tr valign="top"><td>btnSetup</td><td>function</td><td>function () </td></tr><tr valign="top"><td>statusEl</td><td>object</td><td></td></tr><tr valign="top"><td>status</td><td>function</td><td>function (txt) </td></tr><tr valign="top"><td>forkSetup</td><td>function</td><td>function () </td></tr>
+      <tr valign="top"><td>id</td><td>string</td><td>"net-delarre-widget-gpio"</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/raykholo/widget-gpio/master/auto-generated-widget.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/raykholo/widget-gpio"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/raykholo/widget-gpio"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://widget-gpio-raykholo.c9users.io/widget.html"</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Widget / GPIO"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"The GPIO widget communicates to Ben Delarre’s GPIO server for a Raspberry Pi. The GPIO server was modeled after the Serial Port JSON Server (SPJS) and enables websocket communication from the browser to the Rpi’s GPIO ports."</td></tr><tr valign="top"><td>publish</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>subscribe</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>foreignPublish</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>foreignSubscribe</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>init</td><td>function</td><td>function (host) </td></tr><tr valign="top"><td>resetVersion</td><td>function</td><td>function () </td></tr><tr valign="top"><td>onVersion</td><td>function</td><td>function (version) </td></tr><tr valign="top"><td>getPinmap</td><td>function</td><td>function ()    </td></tr><tr valign="top"><td>getPinStates</td><td>function</td><td>function ()    </td></tr><tr valign="top"><td>onPinRemoved</td><td>function</td><td>function (data) </td></tr><tr valign="top"><td>onPinMap</td><td>function</td><td>function (data) </td></tr><tr valign="top"><td>onPinStates</td><td>function</td><td>function (data) </td></tr><tr valign="top"><td>onPinAdded</td><td>function</td><td>function (data) </td></tr><tr valign="top"><td>addPinState</td><td>function</td><td>function (pin) </td></tr><tr valign="top"><td>wsWasEverConnected</td><td>boolean</td><td></td></tr><tr valign="top"><td>wsConnect</td><td>function</td><td>function (hostname, onsuccess, onfail)                        </td></tr><tr valign="top"><td>onRemoteHostConnect</td><td>function</td><td>function () </td></tr><tr valign="top"><td>disconnect</td><td>function</td><td>function () </td></tr><tr valign="top"><td>wsSend</td><td>function</td><td>function (msg) </td></tr><tr valign="top"><td>publishSysMsg</td><td>function</td><td>function (msg) </td></tr><tr valign="top"><td>onWsConnect</td><td>function</td><td>function (event) </td></tr><tr valign="top"><td>onWsDisconnect</td><td>function</td><td>function (event) </td></tr><tr valign="top"><td>publishMsg</td><td>function</td><td>function (msg) </td></tr><tr valign="top"><td>onWsMessage</td><td>function</td><td>function (msg) </td></tr><tr valign="top"><td>statusWatcher</td><td>function</td><td>function () </td></tr><tr valign="top"><td>btnBarSetup</td><td>function</td><td>function () </td></tr><tr valign="top"><td>initSettings</td><td>function</td><td>function () </td></tr><tr valign="top"><td>initControls</td><td>function</td><td>function () </td></tr><tr valign="top"><td>initBody</td><td>function</td><td>function (evt) </td></tr><tr valign="top"><td>toggleBody</td><td>function</td><td>function (evt) </td></tr><tr valign="top"><td>showBody</td><td>function</td><td>function (evt) </td></tr><tr valign="top"><td>hideBody</td><td>function</td><td>function (evt) </td></tr><tr valign="top"><td>forkSetup</td><td>function</td><td>function () </td></tr>
       </tbody>
   </table>
 
