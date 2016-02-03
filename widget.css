@@ -1,74 +1,44 @@
-#com-chilipeppr-widget-tinyg-body {
-    /* padding:0; */
+#net-delarre-widget-gpio.hidebody .panel-body {
+    display: none
 }
-#com-chilipeppr-widget-lasersolder .nav-tabs>li>a {
-    padding: 2px 6px;
+#net-delarre-widget-gpio.hidebody .hidebody {
+    display: none
 }
-#com-chilipeppr-widget-lasersolder .tab-pane {
-    padding:10px 16px 20px 16px;
-    overflow:auto;
-    max-height:170px;
+#net-delarre-widget-gpio.hidebody .showbody {
+    display: block;
 }
-#com-chilipeppr-widget-lasersolder .panel-body {
-    padding:3px;
+#net-delarre-widget-gpio .showbody {
+    display: none
 }
-
-.com-chilipeppr-widget-lasersolder-stat div.input-label {
-    line-height:13px;
-    padding-top:6px;
+#net-delarre-widget-gpio .connected-body {
+    display: none;
 }
-.com-chilipeppr-widget-lasersolder-stat .input-val {
-    padding:0;
-    padding-left: 10px;
-    height:28px;
-    margin-bottom:2px;
+#net-delarre-widget-gpio.connected .connected-body {
+    display: block;
 }
-.com-chilipeppr-widget-lasersolder-stat .col {
-    padding:0 10px 0 0;
+#net-delarre-widget-gpio.connected .install-body {
+    display: none;
 }
-.com-chilipeppr-widget-lasersolder-stat .col:last-child {
-    padding:0;
+#net-delarre-widget-gpio-body {
+    overflow: auto;
+    overflow-x: hidden;
 }
-.com-chilipeppr-widget-lasersolder-stat .progress {
-    margin-bottom:0;
+#net-delarre-widget-gpio .net-delarre-widget-gpio-pins-area {
 }
-.com-chilipeppr-widget-lasersolder-stat .stat-row {
-    padding-top:2px;
+#net-delarre-widget-gpio .nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
-#com-chilipeppr-widget-lasersolder .com-chilipeppr-widget-lasersolder-stat div.col.lblpad {
-    padding-left:10px;
+#net-delarre-widget-gpio #editPinForm {
+    margin: 10px;
 }
-.com-chilipeppr-widget-lasersolder-stat  .stat-unit {
-    font-size:9px;
-    /* display:none; */
+#net-delarre-widget-gpio #editPinForm .form-group {
+    margin-bottom: 3px;
 }
-.com-chilipeppr-widget-lasersolder-stat  div.col.well {
-    margin-bottom:0px;
-    padding-left:5px;
+#net-delarre-widget-gpio .pin-controls .control-label {
+    text-align: right;
+    line-height: 33px;
 }
-.com-chilipeppr-widget-lasersolder-stat  .stat-sm {
-    font-size:10px;
-}
-#com-chilipeppr-widget-lasersolder .panel-footer {
-    font-size:11px;
-    padding:0;
-    margin:0;
-}
-#com-chilipeppr-widget-lasersolder-status {
-    //overflow: auto;
-    //max-height:30px;
-    background:none;
-    background-color:#f5f5f5;
-    border:none;
-}
-#com-chilipeppr-widget-lasersolder .col-xs-3 {
-    padding:0;
-    margin:0;
-}
-#com-chilipeppr-widget-lasersolder .progress-bar span {
-    color: black;
-    padding-left:4px;
-}
-#com-chilipeppr-widget-lasersolder .stat-val {
-    padding-left:4px;
+#net-delarre-widget-gpio input[type=range] {
+    padding: 6px 12px;
 }
